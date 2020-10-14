@@ -99,3 +99,9 @@ Ajouter une url de redirection si l'on est bien connecté :
     {% if is_granted('ROLE_ADMIN') %}
     ...
     {% endif %}
+
+# Bouton de connexion
+
+    <a href={{path('app_login')}} class="btn btn-warning">Se connecter</a>
+
+La route par defaut est **app_login**
